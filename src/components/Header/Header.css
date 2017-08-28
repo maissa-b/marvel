@@ -1,0 +1,14 @@
+.header_container
+{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: red;
+}
+
+.header_title
+{
+    color: white;
+    align-items: center;
+    border: 1px solid white;
+}
