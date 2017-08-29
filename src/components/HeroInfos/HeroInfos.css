@@ -1,0 +1,25 @@
+.hero_infos
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.hero_infos_infos
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero_infos_img
+{
+    width: 30%;
+    height: 75%;
+    align-self: top;
+    margin-right: 50px;
+}
+
+.hero_infos_button
+{
+    height: 40px;
+    width: 50px;
+}

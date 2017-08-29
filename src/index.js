@@ -8,6 +8,7 @@ import { getCharacters } from './actions/characters';
 const initialState = {};
 
 const store = configureStore(initialState);
+const rootNode = document.getElementById('root');
 
 store.dispatch(getCharacters());
 
@@ -16,7 +17,5 @@ const root = (
       <App />
   </Provider>
 );
-
-const rootNode = document.getElementById('root');
 
 ReactDOM.render(root, rootNode);

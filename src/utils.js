@@ -3,7 +3,12 @@ import params from './params';
 
 const { server: { host, port } } = params;
 
-export const requestJson = ({ method, url, body, headers }) => {
-  const path = `http://${host}:${port}${url}`;
-  return axios[method](path, body, { headers }).then(({ data }) => data);
+export const requestJson = ({ method, url, body }) => {
+  const path = `${host}:${port}${url}`;
+  return axios({
+    method,
+    url: path,
+    params: body,
+  })
+  .then(({ data }) => data);
 };
